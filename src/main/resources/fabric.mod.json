@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+  "name": "Testmod",
+  "description": "Test mods for bk",
+  "authors": [
+    "Kistras"
+  ],
+  "contact": {
+    "website": "https://github.com/Kistras"
+  },
+  "license": "MIT",
+  "icon": "assets/testmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "kistras.mods.testmod.client.TestmodClient"
+    ],
+    "main": [
+      "kistras.mods.testmod.Testmod"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
