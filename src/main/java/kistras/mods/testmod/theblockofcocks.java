@@ -27,7 +27,7 @@ public class theblockofcocks extends Block {
         }
         ChickenEntity chick = new ChickenEntity(EntityType.CHICKEN, world);
         chick.setPos(pos.getX(), pos.getY() + 1.0F, pos.getZ());
-        world.spawnEntity(chick);world.spawnEntity(chick);world.spawnEntity(chick);
+        world.spawnEntity(chick);
         world.breakBlock(pos, false);
 
         return ActionResult.SUCCESS;
